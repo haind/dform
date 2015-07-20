@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Get started with jQuery dForm</title>
+</head>
+<style type="text/css">
+    input, label {
+        display: block;
+        margin-bottom: 5px;
+    }
+</style>
+<body>
+<form id="demo-1-form"></form>
+
+
+<!-- Load jQuery and the minified plugin -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="dist/jquery.dform-1.1.0.min.js"></script>
+<script type="text/javascript" src="dist/jquery.validate.min.js"></script>
+
+<script type="text/javascript" class="demo" id="demo-1">
+$(function () {
+    // Create a form from some JSON
+    $("#demo-1-form").dform({
+        "action":"index.html",
+        "method":"get",
+        "html":[
+           {
+                "type":"p",
+                "html":"You must login:"
+            },        
+            {
+               "type" : "div",
+               "class":"form-group",
+               "html": {
+                  "name":"username1",
+                  "id":"username1",
+                  "caption":"Username1",
+                  "class":"form-control",
+                  "type":"text",
+                  "placeholder":"E.g. u...@example.com",
+                   
+                  
+               }
+            },
+            {
+               "type" : "div",
+               "class":"form-group",
+               "html": {
+                  "name":"password",
+                  "caption":"Password",
+                  "class":"form-control",
+                  "required" : true,
+                  "type":"password"
+                }
+            },
+            {
+                "type":"submit",
+                "value":"Login",
+                "class":"btn btn-success"
+            }
+        ] 
+        
+    }); 
+    
+    $("#demo-1-form").validate({
+			rules: {
+				username1: "required",
+				lastname: "required",
+				username: {
+					required: true,
+					minlength: 2
+				},
+				password: {
+					required: true,
+					minlength: 5
+				},
+				confirm_password: {
+					required: true,
+					minlength: 5,
+					equalTo: "#password"
+				},
+				email: {
+					required: true,
+					email: true
+				},
+				topic: {
+					required: "#newsletter:checked",
+					minlength: 2
+				},
+				agree: "required"
+			},
+			messages: {
+				 
+				lastname: "Please enter your lastname",
+				username: {
+					required: "Please enter a username",
+					minlength: "Your username must consist of at least 2 characters"
+				},
+				password: {
+					required: "Please provide a password",
+					minlength: "Your password must be at least 5 characters long"
+				},
+				confirm_password: {
+					required: "Please provide a password",
+					minlength: "Your password must be at least 5 characters long",
+					equalTo: "Please enter the same password as above"
+				},
+				email: "Please enter a valid email address",
+				agree: "Please accept our policy",
+				topic: "Please select at least 2 topics"
+			}
+		});
+    //$( "#txt-username1" ).rules( "add", {  minlength: 2 });
+    
+});
+</script>
+</body>
+</html>

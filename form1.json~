@@ -1,0 +1,63 @@
+{
+    "html":[
+        {
+            "type":"hidden",
+            "name":"token",
+            "value":"aaaa"
+        },
+        {
+            "type":"h3",
+            "html":"Join Our Mailing List"
+        },
+        {
+           "type" : "div",
+           "class":"form-group",
+           "html": {
+              "name":"email",
+              "id":"email",
+              "caption":"Email",
+              "class":"form-control",
+              "type":"text",
+              "placeholder":"youremail@example.com"
+           }
+        },
+        {
+           "type" : "div",
+           "class":"form-group",
+           "html": {
+              "name":"name",
+              "caption":"Name",
+              "class":"form-control",
+              "minlength": 2,
+              "type":"text",
+              "placeholder":"Your Name"
+            }
+        },
+        {
+           "type" : "div",
+           "class":"form-group",
+           "html": {
+              "name":"phone",
+              "caption":"Phone",
+              "class":"form-control",
+              "type":"text",
+              "placeholder":"Your Number"
+            }
+        },        
+        {
+          "type" : "div",
+           "class":"form-group",
+           "html": {   
+              "type": "a",
+              "href":"#",
+              "html": "Click here to learn more about our free email subscriptions."
+           }
+        },
+        {
+            "type":"submit",
+            "value":"Subscribe",
+            "class": "btn btn-success"
+        }
+    ] 
+    
+}

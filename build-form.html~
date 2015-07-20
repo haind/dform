@@ -1,0 +1,7 @@
+<!-- Load jQuery and the minified plugin -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="dist/jquery.dform-1.1.0.min.js"></script>
+
+<script type="text/javascript" class="demo" id="demo-1">
+document.write('aaa');
+</script>
