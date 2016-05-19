@@ -13,8 +13,9 @@
 <script type="text/javascript" class="demo" id="demo-1">
 $(function () {
     // Create a form from some JSON
-    var json_form = $.getJSON('form1.json').done(function(data){$("#demo-1-form").dform(data);});
+  $.getJSON('form1.json').done(function(data){$("#demo-1-form").dform(data);});
 
-    
+alert('michael update test.html');
+alert('hello');
 });
 </script>
