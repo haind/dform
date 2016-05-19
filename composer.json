@@ -1,5 +1,5 @@
 {
-    "name": "targetmedia/dform",
+    "name": "targetmedia_michael/dform",
     "description": "Module Dynamic Form",
     "type": "yii2-extension",
     "authors": [
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "targetmedia\\dform\\": "src/"
+            "targetmedia_michael\\dform\\": "src/"
         }
     }
 }
