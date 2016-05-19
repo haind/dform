@@ -1,0 +1,20 @@
+{
+    "name": "targetmedia/dform",
+    "description": "Module Dynamic Form",
+    "type": "yii2-extension",
+    "authors": [
+        {
+            "name": "Michael Nguyen",
+            "email": "michael@vietnamcubator.com"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "targetmedia\\dform\\": "src/"
+        }
+    }
+}
+
