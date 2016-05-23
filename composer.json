@@ -15,6 +15,12 @@
         "psr-4": {
             "targetmedia_michael\\dform\\": "src/"
         }
+    },
+    "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/haind/dform"
     }
+],
 }
 
