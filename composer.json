@@ -17,10 +17,9 @@
         }
     },
     "repositories": [
-    {
-        "type": "vcs",
-        "url": "https://github.com/haind/dform"
-    }
-],
+	    {
+	        "type": "vcs",
+	        "url": "https://github.com/haind/dform"
+	    }
+	]
 }
-
